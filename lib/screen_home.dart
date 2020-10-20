@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:jaga_app/screen_cari_lokasi.dart';
+import 'package:jaga_app/screen_side_menu.dart';
 
 class ScreenHome extends StatelessWidget {
   ScreenHome({
@@ -608,19 +610,27 @@ class ScreenHome extends StatelessWidget {
             offset: Offset(116.0, 40.0),
             child:
                 // Adobe XD layer: 'Kebayoran Baru' (text)
-                SizedBox(
-              width: 132.0,
-              height: 16.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Kebayoran Baru',
-                style: TextStyle(
-                  fontFamily: 'Rubik-Bold',
-                  fontSize: 16,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.center,
-              )),
+                GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ScreenCariLokasi()),
+                );
+              },
+              child: SizedBox(
+                width: 132.0,
+                height: 16.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Kebayoran Baru',
+                  style: TextStyle(
+                    fontFamily: 'Rubik-Bold',
+                    fontSize: 16,
+                    color: const Color(0xff000000),
+                  ),
+                  textAlign: TextAlign.center,
+                )),
+              ),
             ),
           ),
           Transform.translate(
@@ -690,77 +700,85 @@ class ScreenHome extends StatelessWidget {
             offset: Offset(16.0, 40.0),
             child:
                 // Adobe XD layer: 'Menu' (group)
-                SizedBox(
-              width: 32.0,
-              height: 32.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 32.0, 32.0),
-                    size: Size(32.0, 32.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child:
-                        // Adobe XD layer: 'Rectangle' (shape)
-                        Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8.0),
-                        color: const Color(0xffffffff),
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0x1a000000),
-                            offset: Offset(0, 2),
-                            blurRadius: 4,
-                          ),
-                        ],
+                GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ScreenSideMenu()),
+                );
+              },
+              child: SizedBox(
+                width: 32.0,
+                height: 32.0,
+                child: Stack(
+                  children: <Widget>[
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(0.0, 0.0, 32.0, 32.0),
+                      size: Size(32.0, 32.0),
+                      pinLeft: true,
+                      pinRight: true,
+                      pinTop: true,
+                      pinBottom: true,
+                      child:
+                          // Adobe XD layer: 'Rectangle' (shape)
+                          Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8.0),
+                          color: const Color(0xffffffff),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0x1a000000),
+                              offset: Offset(0, 2),
+                              blurRadius: 4,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(7.0, 15.0, 18.0, 2.0),
-                    size: Size(32.0, 32.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    fixedHeight: true,
-                    child:
-                        // Adobe XD layer: 'Fill 642' (shape)
-                        SvgPicture.string(
-                      _svg_a3w3g2,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(7.0, 15.0, 18.0, 2.0),
+                      size: Size(32.0, 32.0),
+                      pinLeft: true,
+                      pinRight: true,
+                      fixedHeight: true,
+                      child:
+                          // Adobe XD layer: 'Fill 642' (shape)
+                          SvgPicture.string(
+                        _svg_a3w3g2,
+                        allowDrawingOutsideViewBox: true,
+                        fit: BoxFit.fill,
+                      ),
                     ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(7.0, 20.0, 18.0, 2.0),
-                    size: Size(32.0, 32.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    fixedHeight: true,
-                    child:
-                        // Adobe XD layer: 'Fill 644' (shape)
-                        SvgPicture.string(
-                      _svg_gybe2q,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(7.0, 20.0, 18.0, 2.0),
+                      size: Size(32.0, 32.0),
+                      pinLeft: true,
+                      pinRight: true,
+                      fixedHeight: true,
+                      child:
+                          // Adobe XD layer: 'Fill 644' (shape)
+                          SvgPicture.string(
+                        _svg_gybe2q,
+                        allowDrawingOutsideViewBox: true,
+                        fit: BoxFit.fill,
+                      ),
                     ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(7.0, 10.0, 18.0, 2.0),
-                    size: Size(32.0, 32.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    fixedHeight: true,
-                    child:
-                        // Adobe XD layer: 'Fill 646' (shape)
-                        SvgPicture.string(
-                      _svg_ben81w,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(7.0, 10.0, 18.0, 2.0),
+                      size: Size(32.0, 32.0),
+                      pinLeft: true,
+                      pinRight: true,
+                      fixedHeight: true,
+                      child:
+                          // Adobe XD layer: 'Fill 646' (shape)
+                          SvgPicture.string(
+                        _svg_ben81w,
+                        allowDrawingOutsideViewBox: true,
+                        fit: BoxFit.fill,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

@@ -29,45 +29,50 @@ class ScreenCariLokasi extends StatelessWidget {
             offset: Offset(16.0, 584.0),
             child:
                 // Adobe XD layer: 'Group 11' (group)
-                SizedBox(
-              width: 328.0,
-              height: 40.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 328.0, 40.0),
-                    size: Size(328.0, 40.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child:
-                        // Adobe XD layer: 'Rectangle' (shape)
-                        Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
-                        color: const Color(0xffe31f52),
+                GestureDetector(
+              onTap: () {
+                Navigator.of(context).pop();
+              },
+              child: SizedBox(
+                width: 328.0,
+                height: 40.0,
+                child: Stack(
+                  children: <Widget>[
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(0.0, 0.0, 328.0, 40.0),
+                      size: Size(328.0, 40.0),
+                      pinLeft: true,
+                      pinRight: true,
+                      pinTop: true,
+                      pinBottom: true,
+                      child:
+                          // Adobe XD layer: 'Rectangle' (shape)
+                          Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20.0),
+                          color: const Color(0xffe31f52),
+                        ),
                       ),
                     ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(56.0, 12.0, 216.0, 16.0),
-                    size: Size(328.0, 40.0),
-                    fixedHeight: true,
-                    child:
-                        // Adobe XD layer: 'Pilih Lokasi' (text)
-                        SingleChildScrollView(
-                            child: Text(
-                      'Pilih Lokasi',
-                      style: TextStyle(
-                        fontFamily: 'Rubik-Bold',
-                        fontSize: 16,
-                        color: const Color(0xffffffff),
-                      ),
-                      textAlign: TextAlign.center,
-                    )),
-                  ),
-                ],
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(56.0, 12.0, 216.0, 16.0),
+                      size: Size(328.0, 40.0),
+                      fixedHeight: true,
+                      child:
+                          // Adobe XD layer: 'Pilih Lokasi' (text)
+                          SingleChildScrollView(
+                              child: Text(
+                        'Pilih Lokasi',
+                        style: TextStyle(
+                          fontFamily: 'Rubik-Bold',
+                          fontSize: 16,
+                          color: const Color(0xffffffff),
+                        ),
+                        textAlign: TextAlign.center,
+                      )),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
