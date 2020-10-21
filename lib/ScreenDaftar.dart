@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import 'package:adobe_xd/page_link.dart';
+import './ScreenOTPDaftar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class screen_lupa_pass extends StatelessWidget {
+class ScreenDaftar extends StatelessWidget {
   final ImageProvider buble;
-  screen_lupa_pass({
+  ScreenDaftar({
     Key key,
     this.buble = const AssetImage('assets/images/img_buble.png'),
   }) : super(key: key);
@@ -63,10 +65,15 @@ class screen_lupa_pass extends StatelessWidget {
                   fixedHeight: true,
                   child:
                       // Adobe XD layer: '' (shape)
-                      SvgPicture.string(
-                    _svg_ojhg48,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                      PageLink(
+                    links: [
+                      PageLinkInfo(),
+                    ],
+                    child: SvgPicture.string(
+                      _svg_ojhg48,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 Pinned.fromSize(
@@ -77,7 +84,7 @@ class screen_lupa_pass extends StatelessWidget {
                   child:
                       // Adobe XD layer: 'Daftar Kontak Darura' (text)
                       Text(
-                    'Lupa Password',
+                    'Daftar Akun',
                     style: TextStyle(
                       fontFamily: 'Rubik-Medium',
                       fontSize: 18,
@@ -105,7 +112,202 @@ class screen_lupa_pass extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(16.0, 276.0),
+            offset: Offset(16.0, 138.0),
+            child:
+                // Adobe XD layer: 'Get started!' (text)
+                SizedBox(
+              width: 328.0,
+              height: 24.0,
+              child: Text(
+                'Masukan data anda',
+                style: TextStyle(
+                  fontFamily: 'Rubik',
+                  fontSize: 20,
+                  color: const Color(0xff000000),
+                  letterSpacing: 0.2,
+                  fontWeight: FontWeight.w700,
+                  height: 1,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(16.0, 462.0),
+            child:
+                // Adobe XD layer: 'Group 11' (group)
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => ScreenOTPDaftar(
+                    buble: const AssetImage('assets/images/img_buble.png'),
+                  ),
+                ),
+              ],
+              child: SizedBox(
+                width: 328.0,
+                height: 40.0,
+                child: Stack(
+                  children: <Widget>[
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(0.0, 0.0, 328.0, 40.0),
+                      size: Size(328.0, 40.0),
+                      pinLeft: true,
+                      pinRight: true,
+                      pinTop: true,
+                      pinBottom: true,
+                      child:
+                          // Adobe XD layer: 'Rectangle' (shape)
+                          Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20.0),
+                          color: const Color(0xffe31f52),
+                        ),
+                      ),
+                    ),
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(64.0, 10.0, 200.0, 20.0),
+                      size: Size(328.0, 40.0),
+                      fixedHeight: true,
+                      child:
+                          // Adobe XD layer: 'Pilih Lokasi' (text)
+                          Text(
+                        'Daftar',
+                        style: TextStyle(
+                          fontFamily: 'Rubik-Bold',
+                          fontSize: 16,
+                          color: const Color(0xffffffff),
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(16.0, 189.0),
+            child: SizedBox(
+              width: 328.0,
+              height: 64.0,
+              child: Stack(
+                children: <Widget>[
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(0.0, 0.0, 328.0, 64.0),
+                    size: Size(328.0, 64.0),
+                    pinLeft: true,
+                    pinRight: true,
+                    pinTop: true,
+                    pinBottom: true,
+                    child:
+                        // Adobe XD layer: 'Base' (shape)
+                        Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.0),
+                        color: const Color(0xfffafafa),
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0x082d1f50),
+                            offset: Offset(0, 3),
+                            blurRadius: 6,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(48.0, 14.0, 33.0, 14.0),
+                    size: Size(328.0, 64.0),
+                    fixedHeight: true,
+                    child:
+                        // Adobe XD layer: 'One Way' (text)
+                        Text(
+                      'Nama',
+                      style: TextStyle(
+                        fontFamily: 'Rubik',
+                        fontSize: 12,
+                        color: const Color(0x99616f8d),
+                        letterSpacing: 0.12,
+                        height: 1.1666666666666667,
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(48.0, 32.0, 101.0, 18.0),
+                    size: Size(328.0, 64.0),
+                    fixedHeight: true,
+                    child:
+                        // Adobe XD layer: 'One Way' (text)
+                        Text(
+                      'Dhimas Panjie',
+                      style: TextStyle(
+                        fontFamily: 'Rubik',
+                        fontSize: 15,
+                        color: const Color(0xff000000),
+                        letterSpacing: 0.15,
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(20.6, 32.7, 6.7, 3.4),
+                    size: Size(328.0, 64.0),
+                    pinLeft: true,
+                    fixedWidth: true,
+                    fixedHeight: true,
+                    child: SvgPicture.string(
+                      _svg_ix0aav,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(20.8, 29.6, 1.7, 1.7),
+                    size: Size(328.0, 64.0),
+                    pinLeft: true,
+                    fixedWidth: true,
+                    fixedHeight: true,
+                    child: SvgPicture.string(
+                      _svg_nldaez,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(25.5, 29.6, 1.7, 1.7),
+                    size: Size(328.0, 64.0),
+                    pinLeft: true,
+                    fixedWidth: true,
+                    fixedHeight: true,
+                    child: SvgPicture.string(
+                      _svg_7dwrdq,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(16.0, 24.0, 16.0, 16.0),
+                    size: Size(328.0, 64.0),
+                    pinLeft: true,
+                    fixedWidth: true,
+                    fixedHeight: true,
+                    child: SvgPicture.string(
+                      _svg_wb9fev,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(16.0, 280.0),
             child: SizedBox(
               width: 328.0,
               height: 64.0,
@@ -222,65 +424,116 @@ class screen_lupa_pass extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(16.0, 212.0),
-            child:
-                // Adobe XD layer: 'Get started!' (text)
-                SizedBox(
+            offset: Offset(16.0, 371.0),
+            child: SizedBox(
               width: 328.0,
-              height: 24.0,
-              child: Text(
-                'Masukan nomor telepon anda',
-                style: TextStyle(
-                  fontFamily: 'Rubik',
-                  fontSize: 20,
-                  color: const Color(0xff000000),
-                  letterSpacing: 0.2,
-                  fontWeight: FontWeight.w700,
-                  height: 1,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(16.0, 389.0),
-            child:
-                // Adobe XD layer: 'Group 11' (group)
-                SizedBox(
-              width: 328.0,
-              height: 40.0,
+              height: 64.0,
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 328.0, 40.0),
-                    size: Size(328.0, 40.0),
+                    bounds: Rect.fromLTWH(0.0, 0.0, 328.0, 64.0),
+                    size: Size(328.0, 64.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child:
-                        // Adobe XD layer: 'Rectangle' (shape)
+                        // Adobe XD layer: 'Base' (shape)
                         Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
-                        color: const Color(0xffe31f52),
+                        borderRadius: BorderRadius.circular(8.0),
+                        color: const Color(0xfffafafa),
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0x082d1f50),
+                            offset: Offset(0, 3),
+                            blurRadius: 6,
+                          ),
+                        ],
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(64.0, 10.0, 200.0, 20.0),
-                    size: Size(328.0, 40.0),
+                    bounds: Rect.fromLTWH(48.0, 14.0, 31.0, 14.0),
+                    size: Size(328.0, 64.0),
                     fixedHeight: true,
                     child:
-                        // Adobe XD layer: 'Pilih Lokasi' (text)
+                        // Adobe XD layer: 'One Way' (text)
                         Text(
-                      'Kirim OTP',
+                      'Email',
                       style: TextStyle(
-                        fontFamily: 'Rubik-Bold',
-                        fontSize: 16,
-                        color: const Color(0xffffffff),
+                        fontFamily: 'Rubik',
+                        fontSize: 12,
+                        color: const Color(0x99616f8d),
+                        letterSpacing: 0.12,
+                        height: 1.1666666666666667,
                       ),
-                      textAlign: TextAlign.center,
+                      textAlign: TextAlign.left,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(48.0, 32.0, 180.0, 18.0),
+                    size: Size(328.0, 64.0),
+                    fixedHeight: true,
+                    child:
+                        // Adobe XD layer: 'One Way' (text)
+                        Text(
+                      'dhimaspanjie@gmail.com',
+                      style: TextStyle(
+                        fontFamily: 'Rubik',
+                        fontSize: 15,
+                        color: const Color(0xff000000),
+                        letterSpacing: 0.15,
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(20.6, 32.7, 6.7, 3.4),
+                    size: Size(328.0, 64.0),
+                    pinLeft: true,
+                    fixedWidth: true,
+                    fixedHeight: true,
+                    child: SvgPicture.string(
+                      _svg_ix0aav,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(20.8, 29.6, 1.7, 1.7),
+                    size: Size(328.0, 64.0),
+                    pinLeft: true,
+                    fixedWidth: true,
+                    fixedHeight: true,
+                    child: SvgPicture.string(
+                      _svg_nldaez,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(25.5, 29.6, 1.7, 1.7),
+                    size: Size(328.0, 64.0),
+                    pinLeft: true,
+                    fixedWidth: true,
+                    fixedHeight: true,
+                    child: SvgPicture.string(
+                      _svg_7dwrdq,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(16.0, 24.0, 16.0, 16.0),
+                    size: Size(328.0, 64.0),
+                    pinLeft: true,
+                    fixedWidth: true,
+                    fixedHeight: true,
+                    child: SvgPicture.string(
+                      _svg_wb9fev,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
                     ),
                   ),
                 ],

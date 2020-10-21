@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import 'package:adobe_xd/page_link.dart';
+import './ScreenManagerPosko.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ScreenSideMenu extends StatelessWidget {
@@ -466,10 +468,15 @@ class ScreenSideMenu extends StatelessWidget {
             ),
           ),
           // Adobe XD layer: 'Rectangle' (shape)
-          Container(
-            width: 360.0,
-            height: 640.0,
-            color: const Color(0xb3000000),
+          PageLink(
+            links: [
+              PageLinkInfo(),
+            ],
+            child: Container(
+              width: 360.0,
+              height: 640.0,
+              color: const Color(0xb3000000),
+            ),
           ),
           // Adobe XD layer: 'Rectangle' (shape)
           Container(
@@ -599,122 +606,132 @@ class ScreenSideMenu extends StatelessWidget {
             offset: Offset(0.0, 244.0),
             child:
                 // Adobe XD layer: 'Group 20' (group)
-                SizedBox(
-              width: 288.0,
-              height: 48.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 288.0, 48.0),
-                    size: Size(288.0, 48.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child:
-                        // Adobe XD layer: 'Rectangle' (shape)
-                        Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => ScreenManagerPosko(),
+                ),
+              ],
+              child: SizedBox(
+                width: 288.0,
+                height: 48.0,
+                child: Stack(
+                  children: <Widget>[
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(0.0, 0.0, 288.0, 48.0),
+                      size: Size(288.0, 48.0),
+                      pinLeft: true,
+                      pinRight: true,
+                      pinTop: true,
+                      pinBottom: true,
+                      child:
+                          // Adobe XD layer: 'Rectangle' (shape)
+                          Container(
+                        decoration: BoxDecoration(
+                          color: const Color(0xffffffff),
+                        ),
                       ),
                     ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(64.0, 16.0, 142.0, 16.0),
-                    size: Size(288.0, 48.0),
-                    fixedHeight: true,
-                    child:
-                        // Adobe XD layer: 'Kelola Posko' (text)
-                        SingleChildScrollView(
-                            child: Text(
-                      'Kelola Posko',
-                      style: TextStyle(
-                        fontFamily: 'Rubik-Regular',
-                        fontSize: 16,
-                        color: const Color(0xff000000),
-                        letterSpacing: 0.496,
-                      ),
-                      textAlign: TextAlign.left,
-                    )),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 12.0, 18.0, 21.0),
-                    size: Size(288.0, 48.0),
-                    pinLeft: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child:
-                        // Adobe XD layer: 'Group 21' (group)
-                        Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 3.0, 8.0, 8.0),
-                          size: Size(18.0, 21.0),
-                          pinLeft: true,
-                          pinTop: true,
-                          fixedWidth: true,
-                          fixedHeight: true,
-                          child:
-                              // Adobe XD layer: 'Rectangle' (shape)
-                              SvgPicture.string(
-                            _svg_42pkk9,
-                            allowDrawingOutsideViewBox: true,
-                            fit: BoxFit.fill,
-                          ),
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(64.0, 16.0, 142.0, 16.0),
+                      size: Size(288.0, 48.0),
+                      fixedHeight: true,
+                      child:
+                          // Adobe XD layer: 'Kelola Posko' (text)
+                          SingleChildScrollView(
+                              child: Text(
+                        'Kelola Posko',
+                        style: TextStyle(
+                          fontFamily: 'Rubik-Regular',
+                          fontSize: 16,
+                          color: const Color(0xff000000),
+                          letterSpacing: 0.496,
                         ),
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 13.0, 8.0, 8.0),
-                          size: Size(18.0, 21.0),
-                          pinLeft: true,
-                          pinBottom: true,
-                          fixedWidth: true,
-                          fixedHeight: true,
-                          child:
-                              // Adobe XD layer: 'Rectangle' (shape)
-                              SvgPicture.string(
-                            _svg_369at9,
-                            allowDrawingOutsideViewBox: true,
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(10.0, 13.0, 8.0, 8.0),
-                          size: Size(18.0, 21.0),
-                          pinRight: true,
-                          pinBottom: true,
-                          fixedWidth: true,
-                          fixedHeight: true,
-                          child:
-                              // Adobe XD layer: 'Rectangle' (shape)
-                              SvgPicture.string(
-                            _svg_4k2ulh,
-                            allowDrawingOutsideViewBox: true,
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(10.0, 0.0, 8.0, 14.0),
-                          size: Size(18.0, 21.0),
-                          pinRight: true,
-                          pinTop: true,
-                          fixedWidth: true,
-                          fixedHeight: true,
-                          child:
-                              // Adobe XD layer: '+' (text)
-                              Text(
-                            '+',
-                            style: TextStyle(
-                              fontFamily: 'Rubik-Bold',
-                              fontSize: 12,
-                              color: const Color(0xff000000),
+                        textAlign: TextAlign.left,
+                      )),
+                    ),
+                    Pinned.fromSize(
+                      bounds: Rect.fromLTWH(30.0, 12.0, 18.0, 21.0),
+                      size: Size(288.0, 48.0),
+                      pinLeft: true,
+                      fixedWidth: true,
+                      fixedHeight: true,
+                      child:
+                          // Adobe XD layer: 'Group 21' (group)
+                          Stack(
+                        children: <Widget>[
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(0.0, 3.0, 8.0, 8.0),
+                            size: Size(18.0, 21.0),
+                            pinLeft: true,
+                            pinTop: true,
+                            fixedWidth: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Rectangle' (shape)
+                                SvgPicture.string(
+                              _svg_42pkk9,
+                              allowDrawingOutsideViewBox: true,
+                              fit: BoxFit.fill,
                             ),
-                            textAlign: TextAlign.center,
                           ),
-                        ),
-                      ],
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(0.0, 13.0, 8.0, 8.0),
+                            size: Size(18.0, 21.0),
+                            pinLeft: true,
+                            pinBottom: true,
+                            fixedWidth: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Rectangle' (shape)
+                                SvgPicture.string(
+                              _svg_369at9,
+                              allowDrawingOutsideViewBox: true,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(10.0, 13.0, 8.0, 8.0),
+                            size: Size(18.0, 21.0),
+                            pinRight: true,
+                            pinBottom: true,
+                            fixedWidth: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Rectangle' (shape)
+                                SvgPicture.string(
+                              _svg_4k2ulh,
+                              allowDrawingOutsideViewBox: true,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(10.0, 0.0, 8.0, 14.0),
+                            size: Size(18.0, 21.0),
+                            pinRight: true,
+                            pinTop: true,
+                            fixedWidth: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: '+' (text)
+                                Text(
+                              '+',
+                              style: TextStyle(
+                                fontFamily: 'Rubik-Bold',
+                                fontSize: 12,
+                                color: const Color(0xff000000),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

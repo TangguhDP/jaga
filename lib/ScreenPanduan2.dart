@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class screen_panduan_14 extends StatelessWidget {
-  screen_panduan_14({
+class ScreenPanduan2 extends StatelessWidget {
+  ScreenPanduan2({
     Key key,
   }) : super(key: key);
   @override

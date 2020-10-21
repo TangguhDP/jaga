@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ScreenGantiPass extends StatelessWidget {
@@ -63,10 +64,15 @@ class ScreenGantiPass extends StatelessWidget {
                   fixedHeight: true,
                   child:
                       // Adobe XD layer: '' (shape)
-                      SvgPicture.string(
-                    _svg_ojhg48,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                      PageLink(
+                    links: [
+                      PageLinkInfo(),
+                    ],
+                    child: SvgPicture.string(
+                      _svg_ojhg48,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 Pinned.fromSize(

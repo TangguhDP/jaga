@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class ScreenOTPDaftar extends StatelessWidget {
+class ScreenLupaPass extends StatelessWidget {
   final ImageProvider buble;
-  ScreenOTPDaftar({
+  ScreenLupaPass({
     Key key,
     this.buble = const AssetImage('assets/images/img_buble.png'),
   }) : super(key: key);
@@ -63,10 +64,15 @@ class ScreenOTPDaftar extends StatelessWidget {
                   fixedHeight: true,
                   child:
                       // Adobe XD layer: '' (shape)
-                      SvgPicture.string(
-                    _svg_ojhg48,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                      PageLink(
+                    links: [
+                      PageLinkInfo(),
+                    ],
+                    child: SvgPicture.string(
+                      _svg_ojhg48,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 Pinned.fromSize(
@@ -77,7 +83,7 @@ class ScreenOTPDaftar extends StatelessWidget {
                   child:
                       // Adobe XD layer: 'Daftar Kontak Darura' (text)
                       Text(
-                    'Daftar Akun',
+                    'Lupa Password',
                     style: TextStyle(
                       fontFamily: 'Rubik-Medium',
                       fontSize: 18,
@@ -105,7 +111,7 @@ class ScreenOTPDaftar extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(16.0, 260.0),
+            offset: Offset(16.0, 276.0),
             child: SizedBox(
               width: 328.0,
               height: 64.0,
@@ -135,13 +141,13 @@ class ScreenOTPDaftar extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(48.0, 14.0, 54.0, 14.0),
+                    bounds: Rect.fromLTWH(48.0, 14.0, 85.0, 14.0),
                     size: Size(328.0, 64.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'One Way' (text)
                         Text(
-                      'Kode OTP',
+                      'Nomor Telepon',
                       style: TextStyle(
                         fontFamily: 'Rubik',
                         fontSize: 12,
@@ -153,19 +159,18 @@ class ScreenOTPDaftar extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(48.0, 32.0, 55.0, 18.0),
+                    bounds: Rect.fromLTWH(48.0, 32.0, 117.0, 18.0),
                     size: Size(328.0, 64.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'One Way' (text)
                         Text(
-                      '129019',
+                      '0812902939232',
                       style: TextStyle(
                         fontFamily: 'Rubik',
                         fontSize: 15,
                         color: const Color(0xff000000),
                         letterSpacing: 0.15,
-                        fontWeight: FontWeight.w700,
                       ),
                       textAlign: TextAlign.left,
                     ),
@@ -223,14 +228,14 @@ class ScreenOTPDaftar extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(16.0, 220.0),
+            offset: Offset(16.0, 212.0),
             child:
                 // Adobe XD layer: 'Get started!' (text)
                 SizedBox(
               width: 328.0,
               height: 24.0,
               child: Text(
-                'Masukan kode OTP',
+                'Masukan nomor telepon anda',
                 style: TextStyle(
                   fontFamily: 'Rubik',
                   fontSize: 20,
@@ -244,7 +249,7 @@ class ScreenOTPDaftar extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(16.0, 373.0),
+            offset: Offset(16.0, 389.0),
             child:
                 // Adobe XD layer: 'Group 11' (group)
                 SizedBox(
@@ -275,7 +280,7 @@ class ScreenOTPDaftar extends StatelessWidget {
                     child:
                         // Adobe XD layer: 'Pilih Lokasi' (text)
                         Text(
-                      'Daftar',
+                      'Kirim OTP',
                       style: TextStyle(
                         fontFamily: 'Rubik-Bold',
                         fontSize: 16,

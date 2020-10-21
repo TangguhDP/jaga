@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ScreenCariLokasi extends StatelessWidget {
@@ -29,10 +30,10 @@ class ScreenCariLokasi extends StatelessWidget {
             offset: Offset(16.0, 584.0),
             child:
                 // Adobe XD layer: 'Group 11' (group)
-                GestureDetector(
-              onTap: () {
-                Navigator.of(context).pop();
-              },
+                PageLink(
+              links: [
+                PageLinkInfo(),
+              ],
               child: SizedBox(
                 width: 328.0,
                 height: 40.0,

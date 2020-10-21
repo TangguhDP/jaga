@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import './ScreenHome.dart';
+import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ScreenInfoKontak extends StatelessWidget {
@@ -939,10 +941,20 @@ class ScreenInfoKontak extends StatelessWidget {
                   fixedHeight: true,
                   child:
                       // Adobe XD layer: '' (shape)
-                      SvgPicture.string(
-                    _svg_ojhg48,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                      PageLink(
+                    links: [
+                      PageLinkInfo(
+                        transition: LinkTransition.Fade,
+                        ease: Curves.easeOut,
+                        duration: 0.3,
+                        pageBuilder: () => ScreenHome(),
+                      ),
+                    ],
+                    child: SvgPicture.string(
+                      _svg_ojhg48,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 Pinned.fromSize(

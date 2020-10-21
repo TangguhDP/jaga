@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import './ScreenDetailLokasi.dart';
+import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ScreenLihatLokasi extends StatelessWidget {
@@ -916,44 +918,54 @@ class ScreenLihatLokasi extends StatelessWidget {
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Group 2' (group)
-                        Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 24.0),
-                          size: Size(56.0, 24.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child:
-                              // Adobe XD layer: 'Rectangle' (shape)
-                              Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12.0),
-                              color: const Color(0xffe31f52),
-                            ),
-                          ),
-                        ),
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(8.0, 4.0, 40.0, 16.0),
-                          size: Size(56.0, 24.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child:
-                              // Adobe XD layer: 'Lihat' (text)
-                              Text(
-                            'Lihat',
-                            style: TextStyle(
-                              fontFamily: 'Rubik-Medium',
-                              fontSize: 12,
-                              color: const Color(0xffffffff),
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
+                        PageLink(
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.Fade,
+                          ease: Curves.easeOut,
+                          duration: 0.3,
+                          pageBuilder: () => ScreenDetailLokasi(),
                         ),
                       ],
+                      child: Stack(
+                        children: <Widget>[
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 24.0),
+                            size: Size(56.0, 24.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinTop: true,
+                            pinBottom: true,
+                            child:
+                                // Adobe XD layer: 'Rectangle' (shape)
+                                Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12.0),
+                                color: const Color(0xffe31f52),
+                              ),
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(8.0, 4.0, 40.0, 16.0),
+                            size: Size(56.0, 24.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinTop: true,
+                            pinBottom: true,
+                            child:
+                                // Adobe XD layer: 'Lihat' (text)
+                                Text(
+                              'Lihat',
+                              style: TextStyle(
+                                fontFamily: 'Rubik-Medium',
+                                fontSize: 12,
+                                color: const Color(0xffffffff),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
@@ -1172,10 +1184,15 @@ class ScreenLihatLokasi extends StatelessWidget {
                   fixedHeight: true,
                   child:
                       // Adobe XD layer: '' (shape)
-                      SvgPicture.string(
-                    _svg_ojhg48,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                      PageLink(
+                    links: [
+                      PageLinkInfo(),
+                    ],
+                    child: SvgPicture.string(
+                      _svg_ojhg48,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
               ],
