@@ -20,7 +20,7 @@ class ScreenPoskoBencana extends StatelessWidget {
             height: 256.0,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: const AssetImage(''),
+                image: const AssetImage('assets/images/img_map3.png'),
                 fit: BoxFit.fill,
               ),
             ),

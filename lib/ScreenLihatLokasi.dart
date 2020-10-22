@@ -743,8 +743,18 @@ class ScreenLihatLokasi extends StatelessWidget {
                     pinBottom: true,
                     child:
                         // Adobe XD layer: 'Rectangle' (shape)
-                        Container(
-                      color: const Color(0xffffffff),
+                        PageLink(
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.Fade,
+                          ease: Curves.easeOut,
+                          duration: 0.3,
+                          pageBuilder: () => ScreenDetailLokasi(),
+                        ),
+                      ],
+                      child: Container(
+                        color: const Color(0xffffffff),
+                      ),
                     ),
                   ),
                   Pinned.fromSize(
@@ -918,54 +928,44 @@ class ScreenLihatLokasi extends StatelessWidget {
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Group 2' (group)
-                        PageLink(
-                      links: [
-                        PageLinkInfo(
-                          transition: LinkTransition.Fade,
-                          ease: Curves.easeOut,
-                          duration: 0.3,
-                          pageBuilder: () => ScreenDetailLokasi(),
+                        Stack(
+                      children: <Widget>[
+                        Pinned.fromSize(
+                          bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 24.0),
+                          size: Size(56.0, 24.0),
+                          pinLeft: true,
+                          pinRight: true,
+                          pinTop: true,
+                          pinBottom: true,
+                          child:
+                              // Adobe XD layer: 'Rectangle' (shape)
+                              Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12.0),
+                              color: const Color(0xffe31f52),
+                            ),
+                          ),
+                        ),
+                        Pinned.fromSize(
+                          bounds: Rect.fromLTWH(8.0, 4.0, 40.0, 16.0),
+                          size: Size(56.0, 24.0),
+                          pinLeft: true,
+                          pinRight: true,
+                          pinTop: true,
+                          pinBottom: true,
+                          child:
+                              // Adobe XD layer: 'Lihat' (text)
+                              Text(
+                            'Lihat',
+                            style: TextStyle(
+                              fontFamily: 'Rubik-Medium',
+                              fontSize: 12,
+                              color: const Color(0xffffffff),
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       ],
-                      child: Stack(
-                        children: <Widget>[
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 24.0),
-                            size: Size(56.0, 24.0),
-                            pinLeft: true,
-                            pinRight: true,
-                            pinTop: true,
-                            pinBottom: true,
-                            child:
-                                // Adobe XD layer: 'Rectangle' (shape)
-                                Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12.0),
-                                color: const Color(0xffe31f52),
-                              ),
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(8.0, 4.0, 40.0, 16.0),
-                            size: Size(56.0, 24.0),
-                            pinLeft: true,
-                            pinRight: true,
-                            pinTop: true,
-                            pinBottom: true,
-                            child:
-                                // Adobe XD layer: 'Lihat' (text)
-                                Text(
-                              'Lihat',
-                              style: TextStyle(
-                                fontFamily: 'Rubik-Medium',
-                                fontSize: 12,
-                                color: const Color(0xffffffff),
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        ],
-                      ),
                     ),
                   ),
                 ],
