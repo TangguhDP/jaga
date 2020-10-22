@@ -1,11 +1,31 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
 
-class ScreenSplash extends StatelessWidget {
-  final ImageProvider buble;
-  ScreenSplash({
-    Key key,
-    this.buble = const AssetImage('assets/images/img_buble.png'),
-  }) : super(key: key);
+import 'package:flutter/material.dart';
+import 'package:jaga_app/ScreenHome.dart';
+
+class ScreenSplash extends StatefulWidget {
+  @override
+  _ScreenSplashState createState() => _ScreenSplashState();
+}
+
+class _ScreenSplashState extends State<ScreenSplash> {
+  @override
+  void initState() {
+    super.initState();
+    startSplashScreen();
+  }
+
+  startSplashScreen() async {
+    var duration = const Duration(seconds: 3);
+    return Timer(duration, () {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) {
+          return ScreenHome();
+        }),
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +91,7 @@ class ScreenSplash extends StatelessWidget {
               height: 101.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: buble,
+                  image: AssetImage('assets/images/img_buble.png'),
                   fit: BoxFit.fill,
                 ),
               ),
