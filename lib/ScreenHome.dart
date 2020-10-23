@@ -852,14 +852,13 @@ class ScreenHome extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(56.0, 8.0, 264.0, 40.0),
-                    size: Size(328.0, 56.0),
+                    bounds: Rect.fromLTWH(56.0, 8.0, 250.0, 40.0),
+                    size: Size(310.0, 56.0),
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     fixedWidth: true,
                     child:
-                        // Adobe XD layer: 'Group 11' (group)
                         // Adobe XD layer: 'Group 11' (group)
                         PageLink(
                       links: [
@@ -918,8 +917,7 @@ class ScreenHome extends StatelessWidget {
                                   fixedHeight: true,
                                   child:
                                       // Adobe XD layer: 'Suara Darurat' (text)
-                                      SingleChildScrollView(
-                                          child: Text(
+                                      Text(
                                     'Suara Darurat',
                                     style: TextStyle(
                                       fontFamily: 'Rubik-Bold',
@@ -927,7 +925,7 @@ class ScreenHome extends StatelessWidget {
                                       color: const Color(0xffffffff),
                                     ),
                                     textAlign: TextAlign.center,
-                                  )),
+                                  ),
                                 ),
                               ],
                             ),

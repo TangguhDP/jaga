@@ -77,10 +77,10 @@ class ScreenPanduan1 extends StatelessWidget {
                   fixedHeight: true,
                   child:
                       // Adobe XD layer: '' (shape)
-                      PageLink(
-                    links: [
-                      PageLinkInfo(),
-                    ],
+                      GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
                     child: SvgPicture.string(
                       _svg_ojhg48,
                       allowDrawingOutsideViewBox: true,
