@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:jaga_app/ScreenBell.dart';
+import 'package:jaga_app/ScreenPanduan3.dart';
 import './ScreenCariLokasi.dart';
 import 'package:adobe_xd/page_link.dart';
 import 'package:adobe_xd/pinned.dart';
@@ -714,7 +716,7 @@ class ScreenHome extends StatelessWidget {
                         transition: LinkTransition.Fade,
                         ease: Curves.easeOut,
                         duration: 0.3,
-                        pageBuilder: () => ScreenPanduan1(),
+                        pageBuilder: () => ScreenPanduan3(),
                       ),
                     ],
                     child: Container(
@@ -849,69 +851,80 @@ class ScreenHome extends StatelessWidget {
                     fixedWidth: true,
                     child:
                         // Adobe XD layer: 'Group 11' (group)
-                        Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(18.0, 0.0, 264.0, 40.0),
-                          size: Size(280.0, 40.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child:
-                              // Adobe XD layer: 'Rectangle' (shape)
-                              Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20.0),
-                              color: const Color(0xffe31f52),
-                            ),
-                          ),
-                        ),
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(80.0, 12.0, 136.0, 16.0),
-                          size: Size(264.0, 40.0),
-                          fixedWidth: true,
-                          fixedHeight: true,
-                          child:
-                              // Adobe XD layer: 'Group 12' (group)
-                              Stack(
-                            children: <Widget>[
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 14.0, 16.0),
-                                size: Size(136.0, 16.0),
-                                pinLeft: true,
-                                pinTop: true,
-                                pinBottom: true,
-                                fixedWidth: true,
-                                child:
-                                    // Adobe XD layer: '' (shape)
-                                    SvgPicture.string(
-                                  '<svg viewBox="0.0 0.0 14.0 16.0" ><path  d="M 4.846499919891357 13.71420001983643 L 1.077300071716309 13.71420001983643 C 0.4878000020980835 13.71420001983643 0 13.19670009613037 0 12.57120037078857 C 1.245599985122681 11.4552001953125 2.691900014877319 9.455400466918945 2.691900014877319 5.142600059509277 C 2.691900014877319 3.42900013923645 4.030200004577637 1.553400039672852 6.259500026702881 1.205100059509277 C 6.21720027923584 1.098000049591064 6.192000389099121 0.9819000363349915 6.192000389099121 0.8568000197410583 C 6.192000389099121 0.384300023317337 6.553800106048584 0 7.000200271606445 0 C 7.445700168609619 0 7.80750036239624 0.384300023317337 7.80750036239624 0.8568000197410583 C 7.80750036239624 0.9819000363349915 7.782299995422363 1.098000049591064 7.740000247955322 1.205100059509277 C 9.970200538635254 1.553400039672852 11.3076000213623 3.42900013923645 11.3076000213623 5.142600059509277 C 11.3076000213623 9.455400466918945 12.75479984283447 11.4552001953125 14.00040054321289 12.57120037078857 C 14.00040054321289 13.19670009613037 13.51170063018799 13.71420001983643 12.92310047149658 13.71420001983643 L 9.153900146484375 13.71420001983643 C 9.153900146484375 14.97329998016357 8.186400413513184 16.00020027160645 7.000200271606445 16.00020027160645 C 5.814000129699707 16.00020027160645 4.846499919891357 14.97329998016357 4.846499919891357 13.71420001983643 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>',
-                                  allowDrawingOutsideViewBox: true,
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(20.0, 0.0, 116.0, 16.0),
-                                size: Size(136.0, 16.0),
-                                fixedHeight: true,
-                                child:
-                                    // Adobe XD layer: 'Suara Darurat' (text)
-                                    SingleChildScrollView(
-                                        child: Text(
-                                  'Suara Darurat',
-                                  style: TextStyle(
-                                    fontFamily: 'Rubik-Bold',
-                                    fontSize: 16,
-                                    color: const Color(0xffffffff),
-                                  ),
-                                  textAlign: TextAlign.center,
-                                )),
-                              ),
-                            ],
-                          ),
+                        // Adobe XD layer: 'Group 11' (group)
+                        PageLink(
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.Fade,
+                          ease: Curves.easeOut,
+                          duration: 0.3,
+                          pageBuilder: () => ScreenBell(),
                         ),
                       ],
+                      child: Stack(
+                        children: <Widget>[
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(0.0, 0.0, 264.0, 40.0),
+                            size: Size(264.0, 40.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinTop: true,
+                            pinBottom: true,
+                            child:
+                                // Adobe XD layer: 'Rectangle' (shape)
+                                Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20.0),
+                                color: const Color(0xffe31f52),
+                              ),
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(64.0, 12.0, 136.0, 16.0),
+                            size: Size(264.0, 40.0),
+                            fixedWidth: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Group 12' (group)
+                                Stack(
+                              children: <Widget>[
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(0.0, 0.0, 14.0, 16.0),
+                                  size: Size(136.0, 16.0),
+                                  pinLeft: true,
+                                  pinTop: true,
+                                  pinBottom: true,
+                                  fixedWidth: true,
+                                  child:
+                                      // Adobe XD layer: '' (shape)
+                                      SvgPicture.string(
+                                    '<svg viewBox="0.0 0.0 14.0 16.0" ><path  d="M 4.846499919891357 13.71420001983643 L 1.077300071716309 13.71420001983643 C 0.4878000020980835 13.71420001983643 0 13.19670009613037 0 12.57120037078857 C 1.245599985122681 11.4552001953125 2.691900014877319 9.455400466918945 2.691900014877319 5.142600059509277 C 2.691900014877319 3.42900013923645 4.030200004577637 1.553400039672852 6.259500026702881 1.205100059509277 C 6.21720027923584 1.098000049591064 6.192000389099121 0.9819000363349915 6.192000389099121 0.8568000197410583 C 6.192000389099121 0.384300023317337 6.553800106048584 0 7.000200271606445 0 C 7.445700168609619 0 7.80750036239624 0.384300023317337 7.80750036239624 0.8568000197410583 C 7.80750036239624 0.9819000363349915 7.782299995422363 1.098000049591064 7.740000247955322 1.205100059509277 C 9.970200538635254 1.553400039672852 11.3076000213623 3.42900013923645 11.3076000213623 5.142600059509277 C 11.3076000213623 9.455400466918945 12.75479984283447 11.4552001953125 14.00040054321289 12.57120037078857 C 14.00040054321289 13.19670009613037 13.51170063018799 13.71420001983643 12.92310047149658 13.71420001983643 L 9.153900146484375 13.71420001983643 C 9.153900146484375 14.97329998016357 8.186400413513184 16.00020027160645 7.000200271606445 16.00020027160645 C 5.814000129699707 16.00020027160645 4.846499919891357 14.97329998016357 4.846499919891357 13.71420001983643 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>',
+                                    allowDrawingOutsideViewBox: true,
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(20.0, 0.0, 116.0, 16.0),
+                                  size: Size(136.0, 16.0),
+                                  fixedHeight: true,
+                                  child:
+                                      // Adobe XD layer: 'Suara Darurat' (text)
+                                      SingleChildScrollView(
+                                          child: Text(
+                                    'Suara Darurat',
+                                    style: TextStyle(
+                                      fontFamily: 'Rubik-Bold',
+                                      fontSize: 16,
+                                      color: const Color(0xffffffff),
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  )),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
