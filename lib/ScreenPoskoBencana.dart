@@ -159,7 +159,6 @@ class ScreenPoskoBencana extends StatelessWidget {
                 offset: Offset(16.0, 32.0),
                 child:
                     // Adobe XD layer: 'Group 6' (group)
-                    // Adobe XD layer: 'Group 6' (group)
                     GestureDetector(
                   onTap: () {
                     Navigator.of(context).pop();
@@ -428,15 +427,14 @@ class ScreenPoskoBencana extends StatelessWidget {
                   fixedHeight: true,
                   child:
                       // Adobe XD layer: 'Group 2' (group)
-                      PageLink(
-                    links: [
-                      PageLinkInfo(
-                        transition: LinkTransition.Fade,
-                        ease: Curves.easeOut,
-                        duration: 0.3,
-                        pageBuilder: () => ScreenDetailPosko(),
-                      ),
-                    ],
+                      GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ScreenDetailPosko()),
+                      );
+                    },
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(

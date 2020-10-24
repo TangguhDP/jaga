@@ -360,15 +360,14 @@ class ScreenHome extends StatelessWidget {
                     ),
                   ),
                   // Adobe XD layer: 'Group 8' (group)
-                  PageLink(
-                    links: [
-                      PageLinkInfo(
-                        transition: LinkTransition.Fade,
-                        ease: Curves.easeOut,
-                        duration: 0.3,
-                        pageBuilder: () => ScreenPoskoBencana(),
-                      ),
-                    ],
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ScreenPoskoBencana()),
+                      );
+                    },
                     child: SizedBox(
                       width: 64.0,
                       height: 86.0,
