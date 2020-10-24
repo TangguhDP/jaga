@@ -1,4 +1,6 @@
-# jaga_app
+# Aplikasi JAGA
+
+## Submission for Jakbee Virtual Hackathon 2020
 
 A new Flutter project.
 
