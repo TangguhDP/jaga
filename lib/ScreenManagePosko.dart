@@ -160,6 +160,361 @@ class ScreenManagePosko extends StatelessWidget {
                     ],
                   ),
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    // Adobe XD layer: 'Group 3' (group)
+                    SizedBox(
+                      width: 72,
+                      height: 86,
+                      child: Stack(
+                        children: <Widget>[
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(5.0, 0.0, 64.0, 64.0),
+                            size: Size(72.0, 86.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinTop: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Rectangle-18' (shape)
+                                SvgPicture.string(
+                              '<svg viewBox="5.0 0.0 64.0 64.0" ><defs><filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="4"/></filter></defs><path transform="translate(5.0, 0.0)" d="M 12 0 L 52 0 C 58.62741851806641 4.05812240949894e-16 64 5.372582912445068 64 12 L 64 52 C 64 58.62741851806641 58.62741851806641 64 52 64 L 12 64 C 5.372582912445068 64 8.11624481899788e-16 58.62741851806641 0 52 L 0 12 C -8.11624481899788e-16 5.372582912445068 5.372582912445068 1.217436749319462e-15 12 0 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" filter="url(#shadow)"/></svg>',
+                              allowDrawingOutsideViewBox: true,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(0.0, 72.0, 72.0, 14.0),
+                            size: Size(72.0, 86.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinBottom: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Unggah' (group)
+                                Stack(
+                              children: <Widget>[
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(0.0, 0.0, 72.0, 14.0),
+                                  size: Size(72.0, 14.0),
+                                  fixedHeight: true,
+                                  child:
+                                      // Adobe XD layer: 'Unggah Foto' (text)
+                                      Text(
+                                    'Unggah Foto',
+                                    style: TextStyle(
+                                      fontFamily: 'Rubik-Regular',
+                                      fontSize: 12,
+                                      color: const Color(0xff000000),
+                                    ),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(17.0, 14.5, 39.9, 35.9),
+                            size: Size(72.0, 86.0),
+                            fixedWidth: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Icon material-camer…' (shape)
+                                SvgPicture.string(
+                              '<svg viewBox="17.0 14.5 39.9 35.9" ><path transform="translate(14.0, 10.0)" d="M 16.96306610107422 4.5 L 13.31272220611572 8.489447593688965 L 6.989447593688965 8.489447593688965 C 4.795251369476318 8.489447593688965 3 10.28469944000244 3 12.47889423370361 L 3 36.41558074951172 C 3 38.60977554321289 4.795251369476318 40.40502548217773 6.989447593688965 40.40502548217773 L 38.905029296875 40.40502548217773 C 41.09922409057617 40.40502548217773 42.89447402954102 38.60977554321289 42.89447402954102 36.41558074951172 L 42.89447402954102 12.47889423370361 C 42.89447402954102 10.28469944000244 41.09922409057617 8.489447593688965 38.905029296875 8.489447593688965 L 32.58175277709961 8.489447593688965 L 28.9314079284668 4.5 L 16.96306610107422 4.5 Z M 22.94723701477051 34.42085647583008 C 17.44180107116699 34.42085647583008 12.97361850738525 29.95267486572266 12.97361850738525 24.44723892211914 C 12.97361850738525 18.94180107116699 17.44179916381836 14.47361850738525 22.94723701477051 14.47361850738525 C 28.45267295837402 14.47361850738525 32.92085647583008 18.94180107116699 32.92085647583008 24.44723892211914 C 32.92085647583008 29.95267486572266 28.45267295837402 34.42085647583008 22.94723701477051 34.42085647583008 Z M 22.94723701477051 32.42613220214844 L 25.44064140319824 26.94064331054688 L 30.92613220214844 24.44723892211914 L 25.44064140319824 21.95383453369141 L 22.94723701477051 16.46834373474121 L 20.45383262634277 21.95383453369141 L 14.96834278106689 24.44723892211914 L 20.45383262634277 26.94064331054688 L 22.94723701477051 32.42613220214844 Z" fill="#e31f52" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>',
+                              allowDrawingOutsideViewBox: true,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 72,
+                      height: 86,
+                      child: // Adobe XD layer: 'Group 6' (group)
+                          Stack(
+                        children: <Widget>[
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(0.0, 0.0, 64.0, 86.0),
+                            size: Size(64.0, 86.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinTop: true,
+                            pinBottom: true,
+                            child:
+                                // Adobe XD layer: 'Group 4' (group)
+                                Stack(
+                              children: <Widget>[
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(0.0, 0.0, 64.0, 64.0),
+                                  size: Size(64.0, 86.0),
+                                  pinLeft: true,
+                                  pinRight: true,
+                                  pinTop: true,
+                                  pinBottom: true,
+                                  child:
+                                      // Adobe XD layer: 'Group' (group)
+                                      Stack(
+                                    children: <Widget>[
+                                      Pinned.fromSize(
+                                        bounds:
+                                            Rect.fromLTWH(0.0, 0.0, 64.0, 64.0),
+                                        size: Size(64.0, 64.0),
+                                        pinLeft: true,
+                                        pinRight: true,
+                                        pinTop: true,
+                                        pinBottom: true,
+                                        child:
+                                            // Adobe XD layer: 'Rectangle-19' (shape)
+                                            Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(12.0),
+                                            color: const Color(0xffffffff),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: const Color(0x1a000000),
+                                                offset: Offset(0, 2),
+                                                blurRadius: 4,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(16.1, 72.0, 32.0, 14.0),
+                                  size: Size(64.0, 86.0),
+                                  pinBottom: true,
+                                  fixedWidth: true,
+                                  fixedHeight: true,
+                                  child:
+                                      // Adobe XD layer: 'Posko' (group)
+                                      Stack(
+                                    children: <Widget>[
+                                      Pinned.fromSize(
+                                        bounds:
+                                            Rect.fromLTWH(0.0, 0.0, 32.0, 14.0),
+                                        size: Size(32.0, 14.0),
+                                        fixedHeight: true,
+                                        child:
+                                            // Adobe XD layer: 'Lapor' (text)
+                                            Text(
+                                          'Lapor',
+                                          style: TextStyle(
+                                            fontFamily: 'Rubik-Regular',
+                                            fontSize: 12,
+                                            color: const Color(0xff000000),
+                                          ),
+                                          textAlign: TextAlign.left,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(14.0, 16.0, 37.0, 32.0),
+                                  size: Size(64.0, 86.0),
+                                  fixedWidth: true,
+                                  fixedHeight: true,
+                                  child:
+                                      // Adobe XD layer: 'Path_1220' (group)
+                                      Stack(
+                                    children: <Widget>[
+                                      Pinned.fromSize(
+                                        bounds:
+                                            Rect.fromLTWH(0.2, 0.0, 36.5, 31.0),
+                                        size: Size(37.0, 32.0),
+                                        pinLeft: true,
+                                        pinRight: true,
+                                        pinTop: true,
+                                        pinBottom: true,
+                                        child:
+                                            // Adobe XD layer: 'Path' (shape)
+                                            SvgPicture.string(
+                                          '<svg viewBox="0.3 0.0 36.5 31.0" ><defs><linearGradient id="gradient" x1="0.488" y1="0.22775" x2="0.5" y2="1.194515"><stop offset="0.0" stop-color="#fff50000"  /><stop offset="1.0" stop-color="#ffe31f52"  /></linearGradient></defs><path transform="translate(0.25, 0.03)" d="M 36.5 30.96969985961914 L 34.75 30.96969985961914 L 1.75 30.96969985961914 L 0 30.96969985961914 L 0.8884599804878235 29.46200942993164 L 17.38846015930176 1.462009906768799 L 18.25 0 L 19.11153984069824 1.462009906768799 L 35.61154174804688 29.46200942993164 L 36.5 30.96969985961914 Z" fill="url(#gradient)" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>',
+                                          allowDrawingOutsideViewBox: true,
+                                          fit: BoxFit.fill,
+                                        ),
+                                      ),
+                                      Pinned.fromSize(
+                                        bounds:
+                                            Rect.fromLTWH(0.0, 0.0, 37.0, 32.0),
+                                        size: Size(37.0, 32.0),
+                                        pinLeft: true,
+                                        pinRight: true,
+                                        pinTop: true,
+                                        pinBottom: true,
+                                        child:
+                                            // Adobe XD layer: 'Shape' (shape)
+                                            SvgPicture.string(
+                                          '<svg viewBox="0.0 0.0 37.0 32.0" ><path transform="translate(0.0, 0.0)" d="M 1.999800086021423 32.00040054321289 C 1.282500028610229 32.00040054321289 0.6191999912261963 31.61520004272461 0.263700008392334 30.99240112304688 C -0.09270000457763672 30.36870002746582 -0.08730000257492065 29.6028003692627 0.2772000133991241 28.98450088500977 L 16.77690124511719 0.9846000075340271 C 17.13689994812012 0.3744000196456909 17.79210090637207 0 18.50040054321289 0 C 19.20779991149902 0 19.86390113830566 0.3744000196456909 20.22299957275391 0.9846000075340271 L 36.72270202636719 28.98450088500977 C 37.08720016479492 29.6028003692627 37.09260177612305 30.36870002746582 36.73620223999023 30.99240112304688 C 36.38069915771484 31.61520004272461 35.71739959716797 32.00040054321289 35.00009918212891 32.00040054321289 L 1.999800086021423 32.00040054321289 Z" fill="#e31f52" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>',
+                                          allowDrawingOutsideViewBox: true,
+                                          fit: BoxFit.fill,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(31.0, 28.0, 4.0, 14.0),
+                            size: Size(64.0, 86.0),
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: '!' (text)
+                                Text(
+                              '!',
+                              style: TextStyle(
+                                fontFamily: 'Rubik-Black',
+                                fontSize: 12,
+                                color: const Color(0xffffffff),
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 72,
+                      height: 86,
+                      child: // Adobe XD layer: 'Group 5' (group)
+                          Stack(
+                        children: <Widget>[
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(10.1, 0.0, 64.0, 64.0),
+                            size: Size(85.0, 86.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinTop: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Group' (group)
+                                Stack(
+                              children: <Widget>[
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(0.0, 0.0, 64.0, 64.0),
+                                  size: Size(64.0, 64.0),
+                                  pinLeft: true,
+                                  pinRight: true,
+                                  pinTop: true,
+                                  pinBottom: true,
+                                  child:
+                                      // Adobe XD layer: 'Rectangle-20' (shape)
+                                      Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(12.0),
+                                      color: const Color(0xffffffff),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: const Color(0x1a000000),
+                                          offset: Offset(0, 2),
+                                          blurRadius: 4,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(0.0, 72.0, 85.0, 14.0),
+                            size: Size(85.0, 86.0),
+                            pinLeft: true,
+                            pinRight: true,
+                            pinBottom: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Donasi' (group)
+                                Stack(
+                              children: <Widget>[
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(0.0, 0.0, 85.0, 14.0),
+                                  size: Size(85.0, 14.0),
+                                  fixedHeight: true,
+                                  child:
+                                      // Adobe XD layer: 'Jumlah Korban' (text)
+                                      Text(
+                                    'Jumlah Korban',
+                                    style: TextStyle(
+                                      fontFamily: 'Rubik-Regular',
+                                      fontSize: 12,
+                                      color: const Color(0xff000000),
+                                    ),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(26.4, 16.0, 25.6, 26.5),
+                            size: Size(85.0, 86.0),
+                            fixedWidth: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Path-4' (shape)
+                                SvgPicture.string(
+                              '<svg viewBox="27.3 16.0 25.6 26.5" ><path transform="translate(27.31, 15.99)" d="M 25.55916404724121 26.47869682312012 C 25.57282447814941 25.17669677734375 25.16910362243652 23.9045524597168 24.40716361999512 22.84869575500488 C 23.64162826538086 21.7739429473877 22.56955337524414 20.95524978637695 21.33116340637207 20.49969673156738 C 20.72411727905273 20.27060508728027 20.09148025512695 20.11613845825195 19.44716262817383 20.03969573974609 C 18.80284690856934 19.96325302124023 18.17020988464355 19.80878639221191 17.56316375732422 19.57969665527344 C 16.82983016967773 19.39569664001465 16.40082931518555 19.15069580078125 16.27616310119629 18.84469604492188 C 16.133056640625 18.39968681335449 16.07074165344238 17.93265914916992 16.0921630859375 17.46569633483887 L 16.0921630859375 17.46569633483887 L 16.0921630859375 16.46069526672363 C 16.0921630859375 16.39936256408691 16.19949722290039 16.24602890014648 16.41416358947754 16.00069618225098 C 16.62882995605469 15.75536251068115 16.73616409301758 15.60202884674072 16.73616409301758 15.540696144104 C 17.12796974182129 14.63998603820801 17.34612655639648 13.67337703704834 17.37916374206543 12.69169616699219 C 17.59795761108398 12.76260280609131 17.83773612976074 12.68907070159912 17.97916412353516 12.5076961517334 C 18.16568756103516 12.23513126373291 18.27677917480469 11.91807079315186 18.30116271972656 11.58869552612305 L 18.30116271972656 11.58869552612305 L 18.48516273498535 10.9456958770752 C 18.55721473693848 10.78523826599121 18.60377502441406 10.61451625823975 18.6231632232666 10.43969631195068 C 18.65382957458496 10.22502899169922 18.68449592590332 9.980029106140137 18.71516418457031 9.704695701599121 C 18.7517261505127 9.470964431762695 18.71977043151855 9.231645584106445 18.6231632232666 9.015695571899414 C 18.59507751464844 8.934545516967773 18.53458786010742 8.868680000305176 18.45611572265625 8.833804130554199 C 18.37764358520508 8.798927307128906 18.2882194519043 8.798164367675781 18.20916366577148 8.831695556640625 C 18.40552520751953 8.394928932189941 18.5298023223877 7.929224967956543 18.57716369628906 7.452695846557617 C 18.83665084838867 6.267819404602051 18.80508232116699 5.037703037261963 18.48516273498535 3.867695808410645 C 18.14060020446777 2.73455286026001 17.40857887268066 1.758640766143799 16.41716384887695 1.110695958137512 C 15.42114543914795 0.4427248537540436 14.26032543182373 0.06212790310382843 13.06216335296631 0.01069592032581568 C 11.81208801269531 -0.06058985739946365 10.56755924224854 0.2255685329437256 9.474163055419922 0.8356959223747253 C 8.404791831970215 1.408601760864258 7.585967540740967 2.357838869094849 7.176163196563721 3.499696016311646 C 6.798737525939941 4.655417919158936 6.704088687896729 5.884821891784668 6.900163173675537 7.084695816040039 C 6.93203592300415 7.692099094390869 7.088619232177734 8.286436080932617 7.36016321182251 8.830696105957031 C 6.931496620178223 8.769362449645996 6.839496612548828 9.41269588470459 7.084163188934326 10.7606954574585 C 7.116464138031006 10.99289512634277 7.162545680999756 11.22296810150146 7.222163200378418 11.4496955871582 C 7.291374683380127 11.78928089141846 7.415683746337891 12.11525440216064 7.590163230895996 12.41469573974609 C 7.696780681610107 12.64001274108887 7.949697494506836 12.75635433197021 8.190163612365723 12.69069576263428 C 8.270812034606934 13.43322277069092 8.392666816711426 14.17069339752197 8.555163383483887 14.89969635009766 C 8.716653823852539 15.37127876281738 8.966054916381836 15.8079833984375 9.290163040161133 16.18669509887695 C 9.412347793579102 16.30806732177734 9.478937149047852 16.47454071044922 9.474163055419922 16.64669609069824 C 9.500009536743164 17.35268783569336 9.469244956970215 18.05961799621582 9.382163047790527 18.76069641113281 C 9.259496688842773 19.37336349487305 8.462830543518066 19.77169609069824 6.992163181304932 19.95569610595703 C 5.427538871765137 20.22025299072266 3.910953044891357 20.71600914001465 2.492163419723511 21.42669677734375 C 0.8472336530685425 22.56878471374512 -0.09218667447566986 24.47862434387207 0.007163400761783123 26.47869682312012 L 25.55916404724121 26.47869682312012 Z" fill="#eb112d" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>',
+                              allowDrawingOutsideViewBox: true,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(41.0, 32.5, 15.8, 15.3),
+                            size: Size(85.0, 86.0),
+                            fixedWidth: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Group' (group)
+                                Stack(
+                              children: <Widget>[
+                                Pinned.fromSize(
+                                  bounds: Rect.fromLTWH(0.0, 0.0, 15.8, 15.3),
+                                  size: Size(15.8, 15.3),
+                                  pinLeft: true,
+                                  pinRight: true,
+                                  pinTop: true,
+                                  pinBottom: true,
+                                  child:
+                                      // Adobe XD layer: 'Oval-8' (shape)
+                                      Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.all(
+                                          Radius.elliptical(9999.0, 9999.0)),
+                                      color: const Color(0xffffffff),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Pinned.fromSize(
+                            bounds: Rect.fromLTWH(43.0, 34.4, 11.9, 11.5),
+                            size: Size(85.0, 86.0),
+                            fixedWidth: true,
+                            fixedHeight: true,
+                            child:
+                                // Adobe XD layer: 'Path-5' (shape)
+                                SvgPicture.string(
+                              '<svg viewBox="43.9 34.4 11.9 11.5" ><path transform="translate(43.86, 34.36)" d="M 10.25143814086914 4.176791191101074 L 7.557437896728516 4.176791191101074 L 7.557437896728516 1.576791167259216 C 7.53562068939209 0.6996820569038391 6.818318367004395 5.377642775528102e-17 5.940937995910645 0 C 5.063557624816895 -5.204170427930421e-17 4.346255302429199 0.6996820569038391 4.324438095092773 1.576791167259216 L 4.324438095092773 4.176791191101074 L 1.630437970161438 4.176791191101074 C 1.056602835655212 4.15162467956543 0.5152519345283508 4.443427562713623 0.2208222448825836 4.936612606048584 C -0.07360741496086121 5.429797172546387 -0.07360741496086121 6.044785022735596 0.2208222448825836 6.537969589233398 C 0.5152519345283508 7.031154632568359 1.056602835655212 7.322957515716553 1.630437970161438 7.297791004180908 L 4.324438095092773 7.297791004180908 L 4.324438095092773 9.897790908813477 C 4.346255302429199 10.77490043640137 5.063557624816895 11.47458267211914 5.940937995910645 11.47458267211914 C 6.818318367004395 11.47458267211914 7.53562068939209 10.77490043640137 7.557437896728516 9.897790908813477 L 7.557437896728516 7.297791004180908 L 10.25143814086914 7.297791004180908 C 10.82527256011963 7.322957515716553 11.366623878479 7.031154632568359 11.66105365753174 6.537969589233398 C 11.95548343658447 6.044785022735596 11.95548343658447 5.429797172546387 11.66105365753174 4.936612606048584 C 11.366623878479 4.443427562713623 10.82527256011963 4.15162467956543 10.25143814086914 4.176791191101074 L 10.25143814086914 4.176791191101074 Z" fill="#cc0000" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>',
+                              allowDrawingOutsideViewBox: true,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
                 // Adobe XD layer: 'Group 3' (group)
                 Container(
                   width: MediaQuery.of(context).size.height,
@@ -696,6 +1051,7 @@ class ScreenManagePosko extends StatelessWidget {
                   ),
                 ),
                 Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
                   width: MediaQuery.of(context).size.width,
                   height: 80,
                   child: ListView(

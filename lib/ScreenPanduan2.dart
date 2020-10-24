@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import './ScreenPanduan3.dart';
+import 'package:adobe_xd/page_link.dart';
+import './ScreenHome.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ScreenPanduan2 extends StatelessWidget {
@@ -12,13 +15,16 @@ class ScreenPanduan2 extends StatelessWidget {
       backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
-          Transform.translate(
-            offset: Offset(0.0, 80.0),
+          Pinned.fromSize(
+            bounds: Rect.fromLTWH(0.0, 80.0, 360.0, 200.0),
+            size: Size(360.0, 696.0),
+            pinLeft: true,
+            pinRight: true,
+            pinTop: true,
+            fixedHeight: true,
             child:
-                // Adobe XD layer: 'image2' (shape)
+                // Adobe XD layer: 'Group 22@3x' (shape)
                 Container(
-              width: 360.0,
-              height: 200.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: const AssetImage('assets/images/img_panduan2.png'),
@@ -27,268 +33,13 @@ class ScreenPanduan2 extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(0.0, 520.0),
-            child: SizedBox(
-              width: 360.0,
-              height: 80.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 360.0, 80.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(72.0, 80.0, 288.0, 1.0),
-                    size: Size(360.0, 80.0),
-                    pinRight: true,
-                    pinBottom: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child:
-                        // Adobe XD layer: 'Line' (shape)
-                        SvgPicture.string(
-                      _svg_7ma2f4,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(72.0, 21.0, 272.0, 39.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    fixedHeight: true,
-                    child: Text(
-                      'Bawa uang cash, dokumen dan surat-surat penting',
-                      style: TextStyle(
-                        fontFamily: 'Rubik',
-                        fontSize: 16,
-                        color: const Color(0xff000000),
-                        height: 1.25,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(16.0, 24.0, 32.0, 32.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffe31f52),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(27.0, 31.0, 10.0, 19.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      '4',
-                      style: TextStyle(
-                        fontFamily: 'Rubik-Medium',
-                        fontSize: 16,
-                        color: const Color(0xffffffff),
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(0.0, 440.0),
-            child: SizedBox(
-              width: 360.0,
-              height: 80.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 360.0, 80.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(72.0, 80.0, 288.0, 1.0),
-                    size: Size(360.0, 80.0),
-                    pinRight: true,
-                    pinBottom: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child:
-                        // Adobe XD layer: 'Line' (shape)
-                        SvgPicture.string(
-                      _svg_7ma2f4,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(72.0, 21.0, 272.0, 39.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    fixedHeight: true,
-                    child: Text(
-                      'Bawa pluit, handphone, dan senter untuk alat komunikasi darurat',
-                      style: TextStyle(
-                        fontFamily: 'Rubik',
-                        fontSize: 16,
-                        color: const Color(0xff000000),
-                        height: 1.25,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(16.0, 24.0, 32.0, 32.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffe31f52),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(27.0, 31.0, 10.0, 19.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      '3',
-                      style: TextStyle(
-                        fontFamily: 'Rubik-Medium',
-                        fontSize: 16,
-                        color: const Color(0xffffffff),
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(0.0, 360.0),
-            child: SizedBox(
-              width: 360.0,
-              height: 80.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 360.0, 80.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(72.0, 80.0, 288.0, 1.0),
-                    size: Size(360.0, 80.0),
-                    pinRight: true,
-                    pinBottom: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child:
-                        // Adobe XD layer: 'Line' (shape)
-                        SvgPicture.string(
-                      _svg_7ma2f4,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(72.0, 21.0, 272.0, 39.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    fixedHeight: true,
-                    child: Text(
-                      'Bawa kotak P3K, \nmakanan dan minuman',
-                      style: TextStyle(
-                        fontFamily: 'Rubik',
-                        fontSize: 16,
-                        color: const Color(0xff000000),
-                        height: 1.25,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(16.0, 24.0, 32.0, 32.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffe31f52),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(27.0, 31.0, 10.0, 19.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      '2',
-                      style: TextStyle(
-                        fontFamily: 'Rubik-Medium',
-                        fontSize: 16,
-                        color: const Color(0xffffffff),
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          // Adobe XD layer: 'Group' (group)
-          SizedBox(
-            width: 360.0,
-            height: 80.0,
+          Pinned.fromSize(
+            bounds: Rect.fromLTWH(0.0, 520.0, 360.0, 80.0),
+            size: Size(360.0, 696.0),
+            pinLeft: true,
+            pinRight: true,
+            pinBottom: true,
+            fixedHeight: true,
             child: Stack(
               children: <Widget>[
                 Pinned.fromSize(
@@ -298,74 +49,444 @@ class ScreenPanduan2 extends StatelessWidget {
                   pinRight: true,
                   pinTop: true,
                   pinBottom: true,
-                  child:
-                      // Adobe XD layer: 'Rectangle' (shape)
-                      Container(
+                  child: Container(
                     decoration: BoxDecoration(
                       color: const Color(0xffffffff),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0x1a000000),
-                          offset: Offset(0, 0),
-                          blurRadius: 4,
-                        ),
-                      ],
                     ),
                   ),
                 ),
                 Pinned.fromSize(
-                  bounds: Rect.fromLTWH(0.0, 24.0, 360.0, 56.0),
+                  bounds: Rect.fromLTWH(72.0, 80.0, 288.0, 1.0),
                   size: Size(360.0, 80.0),
-                  pinLeft: true,
                   pinRight: true,
-                  pinTop: true,
                   pinBottom: true,
-                  child:
-                      // Adobe XD layer: 'Rectangle' (shape)
-                      Container(
-                    color: const Color(0xffffffff),
-                  ),
-                ),
-                Pinned.fromSize(
-                  bounds: Rect.fromLTWH(19.0, 44.0, 18.0, 15.0),
-                  size: Size(360.0, 80.0),
-                  pinLeft: true,
                   fixedWidth: true,
                   fixedHeight: true,
                   child:
-                      // Adobe XD layer: '' (shape)
+                      // Adobe XD layer: 'Line' (shape)
                       SvgPicture.string(
-                    _svg_ojhg48,
+                    _svg_7ma2f4,
                     allowDrawingOutsideViewBox: true,
                     fit: BoxFit.fill,
                   ),
                 ),
                 Pinned.fromSize(
-                  bounds: Rect.fromLTWH(64.0, 40.0, 263.0, 24.0),
+                  bounds: Rect.fromLTWH(72.0, 21.0, 272.0, 39.0),
                   size: Size(360.0, 80.0),
                   pinLeft: true,
                   pinRight: true,
                   fixedHeight: true,
-                  child:
-                      // Adobe XD layer: 'Daftar Kontak Darura' (text)
-                      Text(
-                    'Siapkan tas siaga',
+                  child: Text(
+                    'Bawa uang cash, dokumen dan surat-surat penting',
                     style: TextStyle(
-                      fontFamily: 'Rubik-Medium',
-                      fontSize: 18,
+                      fontFamily: 'Rubik',
+                      fontSize: 16,
                       color: const Color(0xff000000),
+                      height: 1.25,
                     ),
                     textAlign: TextAlign.left,
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(16.0, 24.0, 32.0, 32.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius:
+                          BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                      color: const Color(0xffe31f52),
+                    ),
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(27.0, 31.0, 10.0, 19.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child: Text(
+                    '4',
+                    style: TextStyle(
+                      fontFamily: 'Rubik-Medium',
+                      fontSize: 16,
+                      color: const Color(0xffffffff),
+                    ),
+                    textAlign: TextAlign.center,
                   ),
                 ),
               ],
             ),
           ),
-          Transform.translate(
-            offset: Offset(0.0, 280.0),
-            child: SizedBox(
-              width: 360.0,
-              height: 80.0,
+          Pinned.fromSize(
+            bounds: Rect.fromLTWH(0.0, 440.0, 360.0, 80.0),
+            size: Size(360.0, 696.0),
+            pinLeft: true,
+            pinRight: true,
+            fixedHeight: true,
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(0.0, 0.0, 360.0, 80.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  pinRight: true,
+                  pinTop: true,
+                  pinBottom: true,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: const Color(0xffffffff),
+                    ),
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(72.0, 80.0, 288.0, 1.0),
+                  size: Size(360.0, 80.0),
+                  pinRight: true,
+                  pinBottom: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child:
+                      // Adobe XD layer: 'Line' (shape)
+                      SvgPicture.string(
+                    _svg_7ma2f4,
+                    allowDrawingOutsideViewBox: true,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(72.0, 21.0, 272.0, 39.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  pinRight: true,
+                  fixedHeight: true,
+                  child: Text(
+                    'Bawa pluit, handphone, dan senter untuk alat komunikasi darurat',
+                    style: TextStyle(
+                      fontFamily: 'Rubik',
+                      fontSize: 16,
+                      color: const Color(0xff000000),
+                      height: 1.25,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(16.0, 24.0, 32.0, 32.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius:
+                          BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                      color: const Color(0xffe31f52),
+                    ),
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(27.0, 31.0, 10.0, 19.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child: Text(
+                    '3',
+                    style: TextStyle(
+                      fontFamily: 'Rubik-Medium',
+                      fontSize: 16,
+                      color: const Color(0xffffffff),
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Pinned.fromSize(
+            bounds: Rect.fromLTWH(0.0, 360.0, 360.0, 80.0),
+            size: Size(360.0, 696.0),
+            pinLeft: true,
+            pinRight: true,
+            fixedHeight: true,
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(0.0, 0.0, 360.0, 80.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  pinRight: true,
+                  pinTop: true,
+                  pinBottom: true,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: const Color(0xffffffff),
+                    ),
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(72.0, 80.0, 288.0, 1.0),
+                  size: Size(360.0, 80.0),
+                  pinRight: true,
+                  pinBottom: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child:
+                      // Adobe XD layer: 'Line' (shape)
+                      SvgPicture.string(
+                    _svg_7ma2f4,
+                    allowDrawingOutsideViewBox: true,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(72.0, 21.0, 272.0, 39.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  pinRight: true,
+                  fixedHeight: true,
+                  child: Text(
+                    'Bawa kotak P3K, \nmakanan dan minuman',
+                    style: TextStyle(
+                      fontFamily: 'Rubik',
+                      fontSize: 16,
+                      color: const Color(0xff000000),
+                      height: 1.25,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(16.0, 24.0, 32.0, 32.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius:
+                          BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                      color: const Color(0xffe31f52),
+                    ),
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(27.0, 31.0, 10.0, 19.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child: Text(
+                    '2',
+                    style: TextStyle(
+                      fontFamily: 'Rubik-Medium',
+                      fontSize: 16,
+                      color: const Color(0xffffffff),
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Pinned.fromSize(
+            bounds: Rect.fromLTWH(0.0, 280.0, 360.0, 80.0),
+            size: Size(360.0, 696.0),
+            pinLeft: true,
+            pinRight: true,
+            fixedHeight: true,
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(0.0, 0.0, 360.0, 80.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  pinRight: true,
+                  pinTop: true,
+                  pinBottom: true,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: const Color(0xffffffff),
+                    ),
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(72.0, 80.0, 288.0, 1.0),
+                  size: Size(360.0, 80.0),
+                  pinRight: true,
+                  pinBottom: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child:
+                      // Adobe XD layer: 'Line' (shape)
+                      SvgPicture.string(
+                    _svg_7ma2f4,
+                    allowDrawingOutsideViewBox: true,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(72.0, 21.0, 272.0, 39.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  pinRight: true,
+                  fixedHeight: true,
+                  child: Text(
+                    'Siapkan tas ransel \n(dan sling bag jika perlu)',
+                    style: TextStyle(
+                      fontFamily: 'Rubik',
+                      fontSize: 16,
+                      color: const Color(0xff000000),
+                      height: 1.25,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(16.0, 24.0, 32.0, 32.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius:
+                          BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                      color: const Color(0xffe31f52),
+                    ),
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(27.0, 31.0, 8.0, 19.0),
+                  size: Size(360.0, 80.0),
+                  pinLeft: true,
+                  fixedWidth: true,
+                  fixedHeight: true,
+                  child: Text(
+                    '1',
+                    style: TextStyle(
+                      fontFamily: 'Rubik-Medium',
+                      fontSize: 16,
+                      color: const Color(0xffffffff),
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Pinned.fromSize(
+            bounds: Rect.fromLTWH(0.0, 624.0, 360.0, 72.0),
+            size: Size(360.0, 696.0),
+            pinLeft: true,
+            pinRight: true,
+            pinBottom: true,
+            fixedHeight: true,
+            child:
+                // Adobe XD layer: 'Group 19' (group)
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => ScreenPanduan3(),
+                ),
+              ],
+              child: Stack(
+                children: <Widget>[
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(0.0, 0.0, 360.0, 72.0),
+                    size: Size(360.0, 72.0),
+                    pinLeft: true,
+                    pinRight: true,
+                    pinTop: true,
+                    pinBottom: true,
+                    child:
+                        // Adobe XD layer: 'Rectangle' (shape)
+                        Container(
+                      decoration: BoxDecoration(
+                        color: const Color(0xffffffff),
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0x1a000000),
+                            offset: Offset(0, 0),
+                            blurRadius: 4,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(16.0, 16.0, 328.0, 40.0),
+                    size: Size(360.0, 72.0),
+                    pinLeft: true,
+                    pinRight: true,
+                    fixedHeight: true,
+                    child:
+                        // Adobe XD layer: 'Group 11' (group)
+                        Stack(
+                      children: <Widget>[
+                        Pinned.fromSize(
+                          bounds: Rect.fromLTWH(0.0, 0.0, 328.0, 40.0),
+                          size: Size(328.0, 40.0),
+                          pinLeft: true,
+                          pinRight: true,
+                          pinTop: true,
+                          pinBottom: true,
+                          child:
+                              // Adobe XD layer: 'Rectangle' (shape)
+                              Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20.0),
+                              color: const Color(0xffe31f52),
+                            ),
+                          ),
+                        ),
+                        Pinned.fromSize(
+                          bounds: Rect.fromLTWH(124.0, 11.0, 80.0, 19.0),
+                          size: Size(328.0, 40.0),
+                          fixedHeight: true,
+                          child:
+                              // Adobe XD layer: 'Daftar Posko' (text)
+                              Text(
+                            'Lanjutkan',
+                            style: TextStyle(
+                              fontFamily: 'Rubik-Bold',
+                              fontSize: 16,
+                              color: const Color(0xffffffff),
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Pinned.fromSize(
+            bounds: Rect.fromLTWH(0.0, 0.0, 360.0, 80.0),
+            size: Size(360.0, 696.0),
+            pinLeft: true,
+            pinRight: true,
+            pinTop: true,
+            fixedHeight: true,
+            child:
+                // Adobe XD layer: 'Group' (group)
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => ScreenHome(),
+                ),
+              ],
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
@@ -375,72 +496,75 @@ class ScreenPanduan2 extends StatelessWidget {
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
-                    child: Container(
+                    child:
+                        // Adobe XD layer: 'Rectangle' (shape)
+                        Container(
                       decoration: BoxDecoration(
                         color: const Color(0xffffffff),
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0x1a000000),
+                            offset: Offset(0, 0),
+                            blurRadius: 4,
+                          ),
+                        ],
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(72.0, 80.0, 288.0, 1.0),
+                    bounds: Rect.fromLTWH(0.0, 24.0, 360.0, 56.0),
                     size: Size(360.0, 80.0),
+                    pinLeft: true,
                     pinRight: true,
+                    pinTop: true,
                     pinBottom: true,
+                    child:
+                        // Adobe XD layer: 'Rectangle' (shape)
+                        Container(
+                      color: const Color(0xffffffff),
+                    ),
+                  ),
+                  Pinned.fromSize(
+                    bounds: Rect.fromLTWH(19.0, 44.0, 18.0, 15.0),
+                    size: Size(360.0, 80.0),
+                    pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
-                        // Adobe XD layer: 'Line' (shape)
-                        SvgPicture.string(
-                      _svg_7ma2f4,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
+                        // Adobe XD layer: '' (shape)
+                        PageLink(
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.Fade,
+                          ease: Curves.easeOut,
+                          duration: 0.3,
+                          pageBuilder: () => ScreenHome(),
+                        ),
+                      ],
+                      child: SvgPicture.string(
+                        _svg_ojhg48,
+                        allowDrawingOutsideViewBox: true,
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(72.0, 21.0, 272.0, 39.0),
+                    bounds: Rect.fromLTWH(64.0, 40.0, 263.0, 24.0),
                     size: Size(360.0, 80.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
-                    child: Text(
-                      'Siapkan tas ransel \n(dan sling bag jika perlu)',
+                    child:
+                        // Adobe XD layer: 'Daftar Kontak Darura' (text)
+                        Text(
+                      'Siapkan tas siaga',
                       style: TextStyle(
                         fontFamily: 'Rubik',
-                        fontSize: 16,
+                        fontSize: 18,
                         color: const Color(0xff000000),
-                        height: 1.25,
+                        fontWeight: FontWeight.w700,
                       ),
                       textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(16.0, 24.0, 32.0, 32.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffe31f52),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(27.0, 31.0, 8.0, 19.0),
-                    size: Size(360.0, 80.0),
-                    pinLeft: true,
-                    fixedWidth: true,
-                    fixedHeight: true,
-                    child: Text(
-                      '1',
-                      style: TextStyle(
-                        fontFamily: 'Rubik-Medium',
-                        fontSize: 16,
-                        color: const Color(0xffffffff),
-                      ),
-                      textAlign: TextAlign.center,
                     ),
                   ),
                 ],

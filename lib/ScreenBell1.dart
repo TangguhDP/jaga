@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:adobe_xd/page_link.dart';
+import './ScreenBell.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ScreenBell1 extends StatelessWidget {
@@ -13,223 +14,6 @@ class ScreenBell1 extends StatelessWidget {
       backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
-          Pinned.fromSize(
-            bounds: Rect.fromLTWH(48.0, 130.0, 264.0, 264.0),
-            size: Size(360.0, 640.0),
-            pinLeft: true,
-            pinRight: true,
-            fixedHeight: true,
-            child:
-                // Adobe XD layer: 'Group 3' (group)
-                PageLink(
-              links: [
-                PageLinkInfo(),
-              ],
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 264.0, 264.0),
-                    size: Size(264.0, 264.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child:
-                        // Adobe XD layer: 'Oval' (shape)
-                        Container(
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xfffff7f7),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(15.0, 16.0, 233.0, 233.0),
-                    size: Size(264.0, 264.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child:
-                        // Adobe XD layer: 'Oval' (shape)
-                        Container(
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xfffce5e5),
-                      ),
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(32.0, 32.0, 200.0, 200.0),
-                    size: Size(264.0, 264.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child:
-                        // Adobe XD layer: 'Group 2' (group)
-                        Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 200.0, 200.0),
-                          size: Size(200.0, 200.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child:
-                              // Adobe XD layer: 'Mask' (shape)
-                              Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.all(
-                                  Radius.elliptical(9999.0, 9999.0)),
-                              gradient: LinearGradient(
-                                begin: Alignment(0.0, -1.0),
-                                end: Alignment(0.0, 1.0),
-                                colors: [
-                                  const Color(0xfff3428a),
-                                  const Color(0xffe31f52)
-                                ],
-                                stops: [0.0, 1.0],
-                              ),
-                            ),
-                          ),
-                        ),
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 200.0, 200.0),
-                          size: Size(200.0, 200.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child:
-                              // Adobe XD layer: 'Group 2' (group)
-                              Stack(
-                            children: <Widget>[
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(18.0, 18.0, 164.0, 164.0),
-                                size: Size(200.0, 200.0),
-                                pinLeft: true,
-                                pinRight: true,
-                                pinTop: true,
-                                pinBottom: true,
-                                child:
-                                    // Adobe XD layer: 'Screen Shot 2020-10…' (group)
-                                    Stack(
-                                  children: <Widget>[
-                                    Pinned.fromSize(
-                                      bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 164.0, 164.0),
-                                      size: Size(164.0, 164.0),
-                                      pinLeft: true,
-                                      pinRight: true,
-                                      pinTop: true,
-                                      pinBottom: true,
-                                      child:
-                                          // Adobe XD layer: 'Mask' (shape)
-                                          Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.elliptical(
-                                                  9999.0, 9999.0)),
-                                          color: const Color(0xffd8d8d8),
-                                        ),
-                                      ),
-                                    ),
-                                    Pinned.fromSize(
-                                      bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 164.0, 164.0),
-                                      size: Size(164.0, 164.0),
-                                      pinLeft: true,
-                                      pinRight: true,
-                                      pinTop: true,
-                                      pinBottom: true,
-                                      child:
-                                          // Adobe XD layer: 'Screen Shot 2020-10…' (group)
-                                          Stack(
-                                        children: <Widget>[
-                                          Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
-                                                -9.0, -9.8, 182.9, 173.8),
-                                            size: Size(164.0, 164.0),
-                                            pinLeft: true,
-                                            pinRight: true,
-                                            pinTop: true,
-                                            pinBottom: true,
-                                            child:
-                                                // Adobe XD layer: 'Screen Shot 2020-10…' (shape)
-                                                Container(
-                                              decoration: BoxDecoration(
-                                                image: DecorationImage(
-                                                  image: const AssetImage(
-                                                      'assets/images/img_bell.png'),
-                                                  fit: BoxFit.fill,
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
-                                                0.0, 0.0, 164.0, 164.0),
-                                            size: Size(164.0, 164.0),
-                                            pinLeft: true,
-                                            pinRight: true,
-                                            pinTop: true,
-                                            pinBottom: true,
-                                            child:
-                                                // Adobe XD layer: 'Mask' (shape)
-                                                Container(
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.elliptical(
-                                                        9999.0, 9999.0)),
-                                                color: const Color(0xffd8d8d8),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 200.0, 200.0),
-                                size: Size(200.0, 200.0),
-                                pinLeft: true,
-                                pinRight: true,
-                                pinTop: true,
-                                pinBottom: true,
-                                child:
-                                    // Adobe XD layer: 'Mask' (shape)
-                                    Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(
-                                        Radius.elliptical(9999.0, 9999.0)),
-                                    gradient: LinearGradient(
-                                      begin: Alignment(0.0, -1.0),
-                                      end: Alignment(0.0, 1.0),
-                                      colors: [
-                                        const Color(0xfff3428a),
-                                        const Color(0xffe31f52)
-                                      ],
-                                      stops: [0.0, 1.0],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
           Pinned.fromSize(
             bounds: Rect.fromLTWH(16.0, 418.0, 328.0, 22.0),
             size: Size(360.0, 640.0),
@@ -372,6 +156,33 @@ class ScreenBell1 extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+          ),
+          Pinned.fromSize(
+            bounds: Rect.fromLTWH(48.0, 130.0, 264.0, 264.0),
+            size: Size(360.0, 640.0),
+            pinLeft: true,
+            pinRight: true,
+            fixedHeight: true,
+            child:
+                // Adobe XD layer: 'bell-active' (shape)
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => ScreenBell(),
+                ),
+              ],
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: const AssetImage('assets/images/img_bell2.png'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
             ),
           ),
         ],
